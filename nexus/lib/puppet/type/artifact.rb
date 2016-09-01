@@ -15,10 +15,12 @@ Puppet::Type::newtype(:artifact) do
     end
 
     newparam(:username) do
+        defaultto nil
         desc "nexus username"
     end
 
     newparam(:password) do 
+        defaultto nil
         desc "nexus password"
     end
 

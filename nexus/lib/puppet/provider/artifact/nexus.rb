@@ -30,7 +30,7 @@ Puppet::Type.type(:artifact).provide(:nexus) do
     def download(uri, user, pass)
         Net::HTTP.start(uri.host, uri.port) {|http|
             req = Net::HTTP::Get.new(uri.to_s)
-            req.basic_auth user, pass 
+            req.basic_auth user, pass if user && pass
             res = http.request(req)
         
             if res.code == '301' || res.code == '307' || res.code == '308'
