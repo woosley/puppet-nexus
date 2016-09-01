@@ -1,0 +1,10 @@
+{
+    "name": "puppet-nexus",
+    "version": "0.0.1",
+    "author": "woosley.xu@gmail.com",
+    "license": "Apache-2.0",
+    "summary": "puppet-nexus lets you download artifacts from nexus",
+    "source": "https://github.com/woosley/puppet-nexus",
+    "project_page": "https://github.com/woosley/puppet-nexus",
+    "issues_url": null
+}

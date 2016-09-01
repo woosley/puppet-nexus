@@ -37,3 +37,8 @@ You can also change the nexus url by pass
 ```
     nexus => 'Your nexus api base url'
 ```
+
+## notes
+
+- this module is tested with ruby1.8 and ruby2.0
+- this module is tested on Centos only but should work on most linux distribution
