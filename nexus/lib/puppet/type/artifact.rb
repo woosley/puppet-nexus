@@ -4,10 +4,11 @@ Puppet::Type::newtype(:artifact) do
     ensurable
     newproperty(:owner) do
         desc "owner of the file"
-        validate do |value|
-            # just try to get the username from the system
-            Etc.getpwnam(value)
-        end
+        # do not check owner because it happens at compile time
+        #validate do |value|
+        #    # just try to get the username from the system
+        #    Etc.getpwnam(value)
+        #end
     end
 
     newparam(:group) do
